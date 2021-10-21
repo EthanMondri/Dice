@@ -1,4 +1,4 @@
-Die[][] dice;
+Die dice;
 int totalRoll = 0;
 int rollNumber = 1;
 int rollAverage = 0;
@@ -10,7 +10,6 @@ void setup()
   background(0);
   textAlign(CENTER, CENTER);
   textSize(18);
-  dice = new Die[4][4];
   noLoop();
 }
 void draw()
@@ -20,8 +19,8 @@ void draw()
   {
     for (int j = 0; j <= 3; j++)
     {
-      dice[i][j] = new Die(2*i*width/8 + width/24, 2*j*height/8 + width/24);
-      dice[i][j].show();
+      dice = new Die(2*i*width/8 + width/24, 2*j*height/8 + width/24);
+      dice.show();
     }
   }
   rollAverage = totalRoll;
