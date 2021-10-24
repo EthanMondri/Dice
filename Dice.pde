@@ -39,7 +39,9 @@ void mousePressed()
 class Die //models one single dice cube
 {
   //member variable declarations here
-  int myX, myY, roll;
+  int myX;
+  int myY;
+  int roll;
   Die(int x, int y) //constructor
   {
     myX = x;
